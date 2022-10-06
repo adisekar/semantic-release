@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "private": "false",
   "scripts": {
     "build": "npm run clean && babel src -d dist --copy-files",
     "clean": "rimraf dist",
