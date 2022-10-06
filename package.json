@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && babel src -d dist --copy-files",
+    "clean": "rimraf dist",
+    "test": "mocha --recursive --require @babel/register",
     "semantic-release": "semantic-release"
   },
   "keywords": [],
@@ -16,9 +18,14 @@
     "url": "https://github.com/adisekar/semantic-release.git"
   },
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/register": "^7.18.9",
     "semantic-release": "^19.0.5"
   },
   "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
     "unique-random-array": "^3.0.0"
   }
 }

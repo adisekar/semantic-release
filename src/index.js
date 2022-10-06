@@ -1,7 +1,7 @@
-import starWarsNames from './starwars-names.json' assert { type: "json" };
+import { names } from './starwars-names.js';
 import unique from 'unique-random-array';
 
-const getRandomItem = count => {
+function getRandomItem(count) {
     if (count) {
         let randomItems = [];
         for (let i = 0; i < count; i++) {
@@ -12,4 +12,7 @@ const getRandomItem = count => {
     return unique(starWarsNames)();
 };
 
-export { starWarsNames as all, getRandomItem as random };
+export default {
+    all: names,
+    random: getRandomItem
+};
