@@ -1,4 +1,6 @@
 export const names = [
+  "Adi Sekar",
+  "4-LOM",
   "Aayla Secura",
   "Admiral Ackbar",
   "Admiral Thrawn",
