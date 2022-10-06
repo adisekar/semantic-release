@@ -1,4 +1,5 @@
 export const names = [
+  "4-LOM",
   "Aayla Secura",
   "Admiral Ackbar",
   "Admiral Thrawn",
