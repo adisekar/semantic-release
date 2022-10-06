@@ -8,6 +8,7 @@
     "build": "npm run clean && babel src -d dist --copy-files",
     "clean": "rimraf dist",
     "test": "mocha --recursive --require @babel/register",
+    "cm": "npx git-cz",
     "semantic-release": "semantic-release"
   },
   "keywords": [],
@@ -22,11 +23,18 @@
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.3",
     "@babel/register": "^7.18.9",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
     "semantic-release": "^19.0.5"
   },
   "dependencies": {
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
     "unique-random-array": "^3.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
